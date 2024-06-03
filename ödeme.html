@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ödeme Ekranı</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+        max-width: 600px;
+        margin: 20px auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    h1 {
+        text-align: center;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+    label {
+        margin-bottom: 10px;
+    }
+    input[type="text"], input[type="number"], select, input[type="submit"] {
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    input[type="submit"] {
+        cursor: pointer;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+    }
+    input[type="submit"]:hover {
+        background-color: #0056b3;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Ödeme Yap</h1>
+    <form action="../WEB TABANLI/web proje site telefoncu/odeme_yap.php" method="POST">
+        <label for="kart_numarasi">Kart Numarası:</label>
+        <input type="text" id="kart_numarasi" name="kart_numarasi" required>
+        
+        <label for="son_kullanma_tarihi">Son Kullanma Tarihi:</label>
+        <input type="text" id="son_kullanma_tarihi" name="son_kullanma_tarihi" placeholder="AA/YY" required>
+        
+        <label for="cvv">CVV:</label>
+        <input type="number" id="cvv" name="cvv" min="100" max="999" required>
+        
+        <label for="taksit">Taksit Sayısı:</label>
+        <select id="taksit" name="taksit">
+            <option value="1">Tek Çekim</option>
+            <option value="2">3 Taksit</option>
+            <option value="3">9 Taksit</option>
+            <option value="4">12 Taksit</option>
+           
+        </select>
+        
+        <input type="submit" value="Ödemeyi Tamamla">
+		
+    </form>
+</div>
+
+</body>
+</html>

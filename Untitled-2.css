@@ -1,0 +1,95 @@
+/* Genel Stil */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Header Stili */
+header {
+    background: #333;
+    color: #fff;
+    padding-top: 20px;
+    min-height: 70px;
+}
+
+header h1 {
+    float: left;
+    margin: 0;
+}
+
+header nav {
+    float: right;
+    margin-top: 20px;
+}
+
+header nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 20px;
+    display: inline-block;
+    transition: background 0.3s ease;
+}
+
+header nav ul li a:hover {
+    background: #555;
+}
+
+/* Hero Bölümü Stili */
+#hero {
+    background: url('../WEB TABANLI/web proje site telefoncu/hero-bg.jpg') center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+}
+
+#hero h2 {
+    margin-bottom: 20px;
+}
+
+/* Ürünler Bölümü Stili */
+#products {
+    padding: 50px 0;
+}
+
+#products h2 {
+    margin-bottom: 20px;
+}
+
+/* Footer Stili */
+footer {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-info, .social-media {
+    width: 45%;
+}
+
+.contact-info h2, .social-media h2 {
+    margin-bottom: 20px;
+}
